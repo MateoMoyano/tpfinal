@@ -7,55 +7,76 @@
     <title>Notas</title>
     <script src="java.js"></script>
 </head>
-<body>
+<body background="azullllllll2.jpg">
     <div class="parent">
-        <div class="div1"> <img src="icono.png" alt="" class="imagen"> </div>
-        <div class="div2"> 
-            <h1 class="titulo">INGRESAR DATOS ProA</h1>
-            <br><br>
+        <div class="div1"> 
+            <h1 class="supertitulo">Escuela Experimental ProA</h1>
         </div>
-        <div class="div3"> 
-            <br><br>
-            <form action="">
-                <label for="">Nombre</label>
-                <input type="text"id="nombre">
-                <label for="">Apellido</label>
-                <input type="text" id="apellido">
-                <label for="">curso</label>
-                <input type="text" id="curso">
-                <label for="">materia</label>
-                <input type="text" id="materia">
-                <label for="">Notas</label>
-                <input type="text" id="notas">
-                <input type="button" value="Enviar" onclick=enviar()>
-            </form>
-             <br><br>
-        </div>
-        <div class="div4"> 
-            <h1 class="twotitulo">Tabla de notas de Alumnos ProA</h1>
-            <br><br>
-        </div>
-        <div class="div5"> 
-            <table>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Curso</th>
-                    <th>Materia</th>
-                    <th>Notas</th>
-                    <th>Modificar</th>
-                </tr>
-                <tbody id="tbody">
         
-                </tbody>
-            </table>
+        
+        <div class="div3" id="div3" > 
+            <div class="div5" > 
+                <h1 class="titulo">INGRESAR DATOS ProA</h1>
+                
+            </div>
+            <div class="div6"> 
+                <br><br>
+                    <form action="">
+                        <label for="">Nombre</label>
+                        <input type="text"id="nombre">
+                        <label for="">Apellido</label>
+                        <input type="text" id="apellido">
+                        <label for="">curso</label>
+                        <input type="text" id="curso">
+                        <br><br>
+                        <label for="">materia</label>
+                        <input type="text" id="materia">
+                        <label for="">Aprobado/Pendiente</label>
+                        <input type="text" id="pendiente">
+                        <input type="button" value="Enviar" onclick=enviar()>
+                    </form>
+                     <br><br>
+            </div>
+            <div class="div7"> 
+                <h1 class="twotitulo">Tabla de notas de Alumnos ProA</h1>
+            </div>
+            <div class="div8"> 
+                <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Curso</th>
+                        <th>Materia</th>
+                        <th>Aprobado/Pendiente</th>
+                        <th>Modificar</th>
+                    </tr>
+                    <tbody id="tbody">
+            
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <div class="div6"> </div>
+        <div class="div4" id="div4">
+            <div class="div2"> 
+                <h1 class="ini">Iniciar sesion</h1>
+    
+            </div> 
+            <form action="">
+                <br><br>
+                <label for="">Nombre</label>
+                <input type="text"id="nombreC">
+                <br><br>
+                <label for="">Apellido</label>
+                <input type="text" id="apellidoC">
+                <br><br>
+                <label for="">Contraseña</label>
+                <input type="text" id="contraseña">
+                <br><br>
+                <input type="button" value="terminar" onclick=inicio()>
+            </form>
         </div>
-     
-     
-     
-     
-     
+        
+        </div>
 </body>
+
 </html>
