@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Notas</title>
+    <script src="java.js"></script>
+</head>
+<body>
+    <div class="parent">
+        <div class="div1"> <img src="icono.png" alt="" class="imagen"> </div>
+        <div class="div2"> 
+            <h1 class="titulo">INGRESAR DATOS ProA</h1>
+            <br><br>
+        </div>
+        <div class="div3"> 
+            <br><br>
+            <form action="">
+                <label for="">Nombre</label>
+                <input type="text"id="nombre">
+                <label for="">Apellido</label>
+                <input type="text" id="apellido">
+                <label for="">curso</label>
+                <input type="text" id="curso">
+                <label for="">materia</label>
+                <input type="text" id="materia">
+                <label for="">Notas</label>
+                <input type="text" id="notas">
+                <input type="button" value="Enviar" onclick=enviar()>
+            </form>
+             <br><br>
+        </div>
+        <div class="div4"> 
+            <h1 class="twotitulo">Tabla de notas de Alumnos ProA</h1>
+            <br><br>
+        </div>
+        <div class="div5"> 
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Curso</th>
+                    <th>Materia</th>
+                    <th>Notas</th>
+                    <th>Modificar</th>
+                </tr>
+                <tbody id="tbody">
+        
+                </tbody>
+            </table>
+        </div>
+        <div class="div6"> </div>
+        </div>
+     
+     
+     
+     
+     
+</body>
+</html>
