@@ -1,26 +1,41 @@
 .parent {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
     
-    .div1 { grid-area: 1 / 1 / 2 / 2; background-color: blueviolet;}
-    .div2 { grid-area: 1 / 2 / 2 / 5; background-color: cornflowerblue;}
-    .div3 { grid-area: 2 / 1 / 3 / 6; }
-    .div4 { grid-area: 3 / 1 / 4 / 6; background-color: cornflowerblue;}
-    .div5 { grid-area: 4 / 1 / 5 / 6; }
-    .div6 { grid-area: 1 / 5 / 2 / 6; background-color: cornflowerblue;}
+    .div1 { grid-area: 1 / 1 / 2 / 7; background-color: aqua;}
+    .div2 { grid-area: 2 / 1 / 10 / 4; }
+    .div3 { grid-area: 2 / 4 / 10 / 7; background: url(desenfoque-lujo-abstracto-degradado-gris-negro-utilizado-como-pared-estudio-fondo-mostrar-sus-productos_1258-100448.jpg);}
+    .div4 { grid-area: 3 / 2 / 9 / 3; background-color: brown;}
+    .div5 { grid-area: 2 / 4 / 4 / 7; }
+    .div6 { grid-area: 4 / 4 / 6 / 7; }
+    .div7 { grid-area: 6 / 4 / 8 / 7; }
+    .div8 { grid-area: 8 / 4 / 10 / 7; }
 .titulo{
     text-align: center;
+    background-color: aquamarine;
 }
 .twotitulo{
-    
+    background-color: aquamarine;
     text-align: center;
 }
 .imagen{
     width: 75px;
     height: 75px;
    text-align: center;
+}
+.supertitulo{
+    text-align: center;
+}
+.ini{
+    text-align: center;
+}
+.div3{
+    display: none;
+}
+.div4{
+    background: url(murooo.jpg);
 }
