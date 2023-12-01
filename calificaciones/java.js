@@ -3,7 +3,7 @@ function enviar(){
     var apellido = document.getElementById("apellido").value;
     var curso = document.getElementById("curso").value;
     var materia = document.getElementById("materia").value;
-    var notas = document.getElementById("notas").value;
+    var pendiente = document.getElementById("pendiente").value;
 
     var tabla= document.getElementById("tbody");
 
@@ -19,7 +19,7 @@ function enviar(){
     colum2.innerHTML= apellido;
     colum3.innerHTML= curso;
     colum4.innerHTML= materia;
-    colum5.innerHTML= notas;
+    colum5.innerHTML= pendiente;
     colum6.innerHTML= '<input type="button" value="Modificar" onclick=modificar(this)><input type="button" value="Eliminar" onclick=eliminar(this)>';
 }
 function modificar(button){
@@ -27,10 +27,14 @@ function modificar(button){
     row.cells[0].innerHTML=prompt("ingrese un nuevo nombre")
     row.cells[1].innerHTML=prompt("ingrese un apellido nuevo")
     row.cells[2].innerHTML=prompt("ingrese un nuevo curso")
-    row.cells[3].innerHTML=prompt("ingrese un nueva nota")
-    row.cells[4].innerHTML=prompt("ingrese un nueva calificacion")
+    row.cells[3].innerHTML=prompt("ingrese nueva materia")
+    row.cells[4].innerHTML=prompt("ingrese si esta pendiente/Aprobado nuevamente")
 }
 function eliminar(button){
     var fila= button.parentNode.parentNode;
     fila.parentNode.removeChild(fila);
+}
+function inicio() {
+    document.getElementById("div3").style.display="block";
+    document.getElementById("div4").style.display="none";
 }
